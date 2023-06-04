@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Example</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 14px;
+        width: 200px;
+      }
+      #checkbox-input_label {
+        color: red;
+        font-size: 20px;
+        background-color: yellow;
+      }
+      body {
+        /* CSS styles go here */
+        font-family: Arial, sans-serif;
+        background-color: green;
+      }
+
+      /* .circle-input {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+      } */
+    </style>
+  </head>
+  <body>
+    <form>
+      <!-- <label for="first_name" placeholder="First Name"><span style="color: red;">*</span></label> -->
+      <input
+        type="text"
+        id="first_name"
+        name="first_name"
+        required
+        placeholder="First Name"
+      /><br />
+
+      <label for="last_name">First Name</label>
+      <input type="text" id="last_name" name="last_name" required /><span
+        style="color: red"
+        >*</span
+      ><br />
+
+      <label for="password-input">Password:</label>
+      <input
+        type="password"
+        id="password-input"
+        name="password-input"
+        required
+      /><br />
+
+      <label for="email-input">Email:</label>
+      <input type="email" id="email-input" name="email-input" required /><br />
+
+      <label for="number-input">Number:</label>
+      <input
+        type="number"
+        id="number-input"
+        name="number-input"
+        min="1"
+        max="100"
+        step="1"
+        required
+      /><br />
+
+      <label for="checkbox-input" id="checkbox-input_label">Checkbox:</label>
+      <input type="checkbox" id="checkbox-input" name="checkbox-input" /><br />
+
+      <label for="radio-input1">Radio 1:</label>
+      <input
+        type="radio"
+        id="radio-input1"
+        name="radio-input"
+        value="option1"
+        required
+      />
+      <label for="radio-input2">Radio 2:</label>
+      <input
+        type="radio"
+        id="radio-input2"
+        name="radio-input"
+        value="option2"
+        required
+      /><br />
+
+      <label for="date-input">Date:</label>
+      <input type="date" id="date-input" name="date-input" required /><br />
+
+      <label for="time-input">Time:</label>
+      <input type="time" id="time-input" name="time-input" required /><br />
+
+      <label for="file-input">File:</label>
+      <input type="file" id="file-input" name="file-input" required /><br />
+
+      <!-- <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+      <button type="button">Button</button> -->
+      <input type="tel" placeholder="(952) ###-####" />
+
+      <input type="email" placeholder="name@domain.com" />
+
+      <!-- <input type="color" placeholder="color" /> -->
+
+      <input type="color" class="circle-input" placeholder="color" />
+
+      <input type="range" min="0" max="10" placeholder="range" />
+      <input
+        type="text"
+        id="year_input"
+        name="year"
+        pattern="[0-9]{4}"
+        maxlength="4"
+        placeholder="YYYY"
+        required
+      />
+      <input type="number" max="212" />
+    </form>
+  </body>
+</html>
