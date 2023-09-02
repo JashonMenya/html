@@ -9,13 +9,23 @@
         p {
             color: #000;
         }
+        .my-paragraphs {
+            columns: 4;
+        }
+
+        #mid-page {
+            content: attr(36556);
+        }
     </style>
 </head>
 <body>
-    <p style="color: blue;">
+    <p class="my-paragraphs">
         inline style
     </p>
 
+    <p class="my-paragraphs"></p>
+
+    <div id="mid-page"></div>
     <!-- external file_name.css files live on a separate file-->
 
 </body>
