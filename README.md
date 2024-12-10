@@ -1,9 +1,9 @@
-# Understanding what HTML Is
+# Understanding what HTML is
 **HTML(*HyperText Markup Language*)** is used to structure content on the web. It consists of: 
 * Elements: The building blocks of HTML (e.g., `<p>`, `<h1>`, `<div>`).
-* Tags: Start and end markers that define elements.s
+* Tags: Start and end markers that define elements
 
-Example can be found [**`index.html`**](#document_structure/index.html).
+[**`Example`**](document_structure/index.html)
 
 
 # Tag
