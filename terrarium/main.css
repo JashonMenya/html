@@ -1,0 +1,149 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* This pushes the footer down if the content is short */
+    /* Main content styling */
+}
+
+h1 {
+    color: #31241d;
+    text-align: center;
+}
+
+#left-container {
+	left: 0px;
+}
+
+#right-container {
+	right: 0px;
+}
+
+.container {
+	background-color: #eee;
+	width: 15%;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+
+.plant-holder {
+    position: relative;
+    height: 13%;
+    left: -10px;
+
+}
+
+.plant {
+    position: absolute;
+    max-width: 150%;
+    max-height: 150%;
+    z-index: 2;
+}
+
+div img {
+    width: 90px;
+}
+
+h1:hover {
+    color: hotpink;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.jar-walls {
+    height: 80%;
+    width: 60%;
+    background: #d1e1df;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 0.5%;
+    left: 20%;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.jar-top {
+    width: 50%;
+    height: 5%;
+    background: #d1e1df;
+    position: absolute;
+    bottom: 80.5%;
+    left: 25%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.dirt {
+    width: 60%;
+    height: 5%;
+    background: #3a241d;
+    position: absolute;
+    border-radius: 0 0 1rem 1rem;
+    bottom: 1%;
+    left: 20%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+
+.jar-glossy-long {
+    width: 3%;
+    height: 20%;
+    border-radius: 2rem;
+    background: #ddfbff;
+    position: absolute;
+    bottom: 20%;
+    left: 23%;
+}
+
+.jar-glossy-short {
+    width: 3%;
+    height: 5%;
+    border-radius: 2rem;
+    background: #ddfbff;
+    position: absolute;
+    bottom: 45%;
+    left: 23%;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+    
+}
+
+.plant {
+    animation: slide-in 2s ease-in;
+}
+
+.plant:hover {
+    width: 150px;
+    height: 150px;
+    background-color: darkgrey;
+}
