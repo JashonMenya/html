@@ -24,3 +24,16 @@ Examples include :
 - ```cmd <meta>```
 - ```cmd <link>```
 - ```cmd <hr>```
+
+
+# Javascript
+
+Makes the web feel alive by adding interactivity.
+
+## Variables and data types
+Containers that hold data values. NUmbers, texts , complex values.
+
+## Commands to create variables
+```let```
+```var```
+```const```
