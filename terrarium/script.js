@@ -32,6 +32,15 @@ function dragElement(terrariumElement) {
 }
 
 
+// Drag individual elements
+// dragElement(document.getElementById("plant1"));
+// dragElement(document.getElementById("plant2"));
 
-dragElement(document.getElementById("plant1"));
-dragElement(document.getElementById("plant2"));
+function dynamicDragElement() {
+  let terrariumElements = document.getElementsByClassName("plant");
+  for (let i = 0; i < terrariumElements.length; i++) {
+    dragElement(terrariumElements[i]);
+  }
+}
+
+dynamicDragElement();
