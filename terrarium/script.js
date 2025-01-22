@@ -8,7 +8,7 @@ function dragElement(terrariumElement) {
   function pointerDrag(e) {
     e.preventDefault();
     console.log(e);
-    console.log("here****")
+    console.log("here****");
     pos3 = e.clientX;
     pos4 = e.clientY;
     document.onpointermove = elementDrag;
@@ -30,7 +30,6 @@ function dragElement(terrariumElement) {
     document.onpointermove = null;
   }
 }
-
 
 // Drag individual elements
 // dragElement(document.getElementById("plant1"));
